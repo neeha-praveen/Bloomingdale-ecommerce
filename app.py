@@ -21,8 +21,9 @@ app.config['MAIL_PASSWORD'] = 'ufnw eeed cdbk xhtv'     # Replace with your app 
 
 mail = Mail(app)
 
-# MongoDB Atlas connection (you'll get this URL later)
-client = MongoClient('mongodb+srv://neehanpraveen:zVgSedR3TF4YD3la@cluster0.htfoq.mongodb.net/')
+# Use environment variables for MongoDB connection
+MONGO_URI = os.environ.get('MONGO_URI')
+client = MongoClient(MONGO_URI)
 db = client.blooming_dale
 
 # Serve static files

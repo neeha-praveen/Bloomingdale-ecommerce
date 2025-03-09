@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomingdale - Your Local Flower Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bloomingdale</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to Bloomingdale</h1>
+            <p>Beautiful flowers for every occasion</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid" id="product-container">
+                <!-- Products dynamically loaded here -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 7th Main Rd, HRBR Layout, Kalyan Nagar, Bengaluru, Karnataka</p>
+                    <p><i class="fas fa-phone"></i> +91-8123450555</p>
+                    <p><i class="fas fa-envelope"></i> info@bloomingdale.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 6:00 PM</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart-modal" class="modal">
+            <div class="modal-content">
+                <h2>Shopping Cart</h2>
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <p>Total:  ₹<span id="cart-total">0.00</span></p>
+                    <button onclick="placeOrder()" class="checkout-btn">Place Order</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bloomingdale. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

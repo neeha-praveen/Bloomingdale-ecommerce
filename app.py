@@ -4,22 +4,12 @@ from bson import ObjectId
 import os
 from datetime import datetime
 from flask_cors import CORS
-from flask_mail import Mail, Message
 
 # Initialize Flask app
 app = Flask(__name__)
 
 # Add CORS support for development
 CORS(app)
-
-# Mail settings
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'neehapraveen.projects@gmail.com' 
-app.config['MAIL_PASSWORD'] = 'ufnw eeed cdbk xhtv'     # Replace with your app password
-
-mail = Mail(app)
 
 # Use environment variables for MongoDB connection
 MONGO_URI = os.environ.get('MONGO_URI')
@@ -97,32 +87,32 @@ def init_db():
             sample_products = [
                 {
                     'name': "Red Roses",
-                    'price': 49.99,
+                    'price': 570,
                     'image': "./images/redroses.jpg"
                 },
                 {
                     'name': "White Roses",
-                    'price': 39.99,
+                    'price': 600,
                     'image': "./images/whiteroses.jpg"
                 },
                 {
                     'name': "Tulips",
-                    'price': 34.99,
+                    'price': 650,
                     'image': "./images/tulips.jpg"
                 },
                 {
                     'name': "White Lilies",
-                    'price': 44.99,
+                    'price': 570,
                     'image': "./images/whitelilies.jpg"
                 },
                 {
                     'name': "Pink Lilies",
-                    'price': 44.99,
+                    'price': 620,
                     'image': "./images/pinklilies.jpg"
                 },
                 {
                     'name': "Orchids",
-                    'price': 44.99,
+                    'price': 650,
                     'image': "./images/orchids.jpg"
                 }
             ]

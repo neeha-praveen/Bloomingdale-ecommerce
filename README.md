@@ -16,7 +16,7 @@ Bloomingdale is an eCommerce website for a flower shop. Users can browse product
 - **Backend:** Flask (Python)
 - **Database:** MongoDB
 
-## Deployment & Setup
+## Deployment
 Bloomingdale is deployed on Render. You can access it here: https://bloomingdale-tm88.onrender.com
 
 

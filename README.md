@@ -18,7 +18,7 @@ Bloomingdale is an eCommerce website for a flower shop. Users can browse product
 
 ## Deployment & Setup
 ### Live Demo
-Bloomingdale is deployed on Render. You can access it here: (https://bloomingdale-tm88.onrender.com)
+Bloomingdale is deployed on Render. You can access it here: https://bloomingdale-tm88.onrender.com
 
 
 ## Future Improvements
